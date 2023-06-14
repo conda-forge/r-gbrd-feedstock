@@ -1,11 +1,11 @@
-About r-gbrd
-============
+About r-gbrd-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-gbrd-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=gbRd
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-gbrd-feedstock/blob/main/LICENSE.txt)
 
 Summary: Provides utilities for processing Rd objects and files. Extract argument descriptions and other parts of the help pages of functions.
 
