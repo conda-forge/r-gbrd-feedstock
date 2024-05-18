@@ -1,4 +1,4 @@
-{% set version = '0.4-11' %}
+{% set version = "0.4.12" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/gbRd_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/gbRd/gbRd_{{ version }}.tar.gz
-  sha256: 0251f6dd6ca987a74acc4765838b858f1edb08b71dbad9e563669b58783ea91b
+  sha256: 48cd1d2a845f4b54c307473d2fa07a4ef6a644272f91c6a953844e66cd832338
 
 build:
-  merge_build_host: True  # [win]
-  number: 1005
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -37,8 +37,7 @@ test:
 about:
   home: https://CRAN.R-project.org/package=gbRd
   license: GPL-2.0-or-later
-  summary: Provides utilities for processing Rd objects and files. Extract argument descriptions
-    and other parts of the help pages of functions.
+  summary: Provides utilities for processing Rd objects and files. Extract argument descriptions and other parts of the help pages of functions.
   license_family: GPL2
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
